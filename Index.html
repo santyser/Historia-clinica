@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Historia Clínica Web</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<button id="resetBtn" class="btn-reset">Eliminar todo</button>
+<button id="copyBtn" class="btn-copy">Copiar solo lo visible</button>
+
+<div class="form-section">
+
+  <div class="row">
+    <label>Sexo de</label>
+    <select class="sexo">
+      <option value="" disabled selected>Seleccione...</option>
+      <option>Hombre</option>
+      <option>Mujer</option>
+      <option>Mujer trans</option>
+      <option>Hombre trans</option>
+      <option>Otra</option>
+    </select>
+    <input type="text" class="sexo-otra input-oculto" placeholder="Especifique sexo" />
+    
+    <label>edad</label>
+    <input type="number" min="0" max="150" class="edad" placeholder="años" />
+    
+    <label>Procedente de</label>
+    <input type="text" class="procedencia" placeholder="Lugar" />
+    
+    <label>Vive</label>
+    <select class="vive">
+      <option value="" disabled selected>Seleccione...</option>
+      <option>Con familia</option>
+      <option>Solo</option>
+      <option>En hogar</option>
+      <option>Otra</option>
+    </select>
+    <input type="text" class="vive-otra input-oculto" placeholder="Especifique" />
+    
+    <label>Situación laboral</label>
+    <select class="laboral">
+      <option value="" disabled selected>Seleccione...</option>
+      <option>Trabaja</option>
+      <option>Estudia</option>
+      <option>Trabaja en su hogar</option>
+      <option>Otra</option>
+    </select>
+    <input type="text" class="laboral-otra input-oculto" placeholder="Especifique" />
+  </div>
+
+  <!-- Apartados desplegables -->
+
+  <div class="accordion">
+    <button class="accordion-header">Antecedentes Personales (AP)</button>
+    <div class="accordion-content">
+      <label>Enfermedades crónicas más frecuentes</label>
+      <input type="text" />
+      <label>Cirugías más frecuentes</label>
+      <input type="text" />
+      <label>Ingesta de fármacos</label>
+      <input type="text" />
+      <label>Alergias a medicamentos</label>
+      <input type="text" />
+    </div>
+  </div>
+
+  <div class="accordion">
+    <button class="accordion-header">Motivo de Consulta (MC)</button>
+    <div class="accordion-content">
+      <label>Neurológico</label><input type="text" />
+      <label>Respiratorio</label><input type="text" />
+      <label>Cardiovascular</label><input type="text" />
+      <label>Digestivo</label><input type="text" />
+      <label>PyM</label><input type="text" />
+      <label>G.O</label><input type="text" />
+      <label>Nefrourológico</label><input type="text" />
+      <label>A.I</label><input type="text" />
+      <label>PTM</label><input type="text" />
+      <label>OA</label><input type="text" />
+      <label>Salud mental</label><input type="text" />
+    </div>
+  </div>
+
+  <div class="accordion">
+    <button class="accordion-header">Examen físico</button>
+    <div class="accordion-content">
+      <label>General</label><input type="text" />
+      <label>PNM</label><input type="text" />
+      <label>PyM</label><input type="text" />
+      <label>PP</label><input type="text" />
+      <label>CV</label><input type="text" />
+      <label>ABD</label><input type="text" />
+      <label>LG</label><input type="text" />
+      <label>G.O</label><input type="text" />
+      <label>OA</label><input type="text" />
+      <label>PTM</label><input type="text" />
+    </div>
+  </div>
+
+  <div class="accordion">
+    <button class="accordion-header">Paraclínicas</button>
+    <div class="accordion-content">
+      <label>Lab</label><input type="text" />
+      <label>Rx</label><input type="text" />
+      <label>TC</label><input type="text" />
+      <label>RNM</label><input type="text" />
+    </div>
+  </div>
+
+  <div class="accordion">
+    <button class="accordion-header">Planteo y Conducta</button>
+    <div class="accordion-content">
+      <label>Planteo</label><textarea rows="3"></textarea>
+      <label>Conducta</label><textarea rows="3"></textarea>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
